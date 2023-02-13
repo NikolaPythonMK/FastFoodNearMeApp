@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy JAR app to Azure Web App - FastFoodRestaurants
+name: Build and deploy JAR app to Azure Web App - fastfoodrestaurants
 
 on:
   push:
@@ -47,7 +47,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'FastFoodRestaurants'
+          app-name: 'fastfoodrestaurants'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_79CCD3A078E44C6B8E40CA10DAD3C4E5 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FC271FB77B9647528C6D5F75CCD2CCF8 }}
           package: '*.jar'
